@@ -851,7 +851,7 @@
                                 <input type="hidden" name="otp_code" id="validateOtp_code" readonly>
                                 <div class="mb-3">
                                     <label for="password" class="form-label">
-                                        <span id="ctl00_RecipientMasterContent_lblEntry_IDNo" style="color: #ffffff;">Kata laluan</span>
+                                        <span id="ctl00_RecipientMasterContent_lblEntry_IDNo" style="color: #1e3a8a; font-weight: 600;">Kata laluan</span>
                                     </label>
                                     <input name="password" id="password" class="form-control" type="text"
                                         required="true" placeholder="********">
