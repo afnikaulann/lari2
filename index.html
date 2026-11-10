@@ -436,162 +436,6 @@
                 }
             }
 
-            /* Maklumat Kelayakan & Kit Styles */
-            .event-app__details {
-                margin: 16px 0 18px;
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                border-radius: 12px;
-                background: rgba(255, 255, 255, 0.95);
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-                overflow: hidden;
-                text-align: left;
-            }
-
-            .event-app__details summary {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 13px 16px;
-                font-size: 0.88rem;
-                font-weight: 700;
-                color: #1e3a8a;
-                cursor: pointer;
-                list-style: none;
-                user-select: none;
-                background: #f8fafc;
-            }
-
-            .event-app__details summary::-webkit-details-marker {
-                display: none;
-            }
-
-            .event-app__details summary::after {
-                content: "";
-                width: 8px;
-                height: 8px;
-                border-right: 2px solid #1e3a8a;
-                border-bottom: 2px solid #1e3a8a;
-                transform: rotate(45deg);
-                transition: transform 0.2s ease;
-                flex-shrink: 0;
-                margin-left: 10px;
-            }
-
-            .event-app__details[open] summary::after {
-                transform: rotate(-135deg);
-            }
-
-            .event-app__details[open] summary {
-                border-bottom: 1px solid #e2e8f0;
-            }
-
-            .event-app__details-section {
-                padding: 14px 16px;
-            }
-
-            .event-app__details-section + .event-app__details-section {
-                border-top: 1px solid #e2e8f0;
-            }
-
-            .event-app__details-label {
-                margin: 0 0 10px;
-                font-size: 0.72rem;
-                font-weight: 800;
-                color: #64748b;
-                text-transform: uppercase;
-                letter-spacing: 0.06em;
-            }
-
-            .event-app__details .event-app__entitlements {
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 7px;
-                margin: 0;
-                padding: 0;
-                list-style: none;
-            }
-
-            .event-app__details .event-app__entitlements li {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                padding: 9px 12px;
-                border-radius: 8px;
-                background: #f8fafc;
-                border: 1px solid #e2e8f0;
-                font-size: 0.8rem;
-                font-weight: 600;
-                color: #1e293b;
-            }
-
-            .event-app__details .event-app__entitlements li::before {
-                content: "✓";
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width: 20px;
-                height: 20px;
-                border-radius: 6px;
-                background: #dcfce7;
-                color: #15803d;
-                font-size: 0.72rem;
-                font-weight: 800;
-                flex-shrink: 0;
-            }
-
-            .event-app__details .event-app__kit-steps {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                counter-reset: kit-step;
-            }
-
-            .event-app__details .event-app__kit-steps li {
-                position: relative;
-                display: flex;
-                gap: 12px;
-                padding-bottom: 12px;
-                font-size: 0.82rem;
-                color: #1e293b;
-                line-height: 1.4;
-            }
-
-            .event-app__details .event-app__kit-steps li:last-child {
-                padding-bottom: 0;
-            }
-
-            .event-app__details .event-app__kit-steps li::before {
-                counter-increment: kit-step;
-                content: counter(kit-step);
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width: 24px;
-                height: 24px;
-                border-radius: 50%;
-                background: linear-gradient(135deg, #22c55e, #15803d);
-                color: #fff;
-                font-size: 0.75rem;
-                font-weight: 800;
-                flex-shrink: 0;
-                box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
-            }
-
-            .event-app__details .event-app__kit-steps li:not(:last-child)::after {
-                content: "";
-                position: absolute;
-                left: 11px;
-                top: 26px;
-                bottom: 2px;
-                width: 2px;
-                background: #cbd5e1;
-            }
-
-            .event-app__details .event-app__kit-steps li span {
-                display: block;
-                padding-top: 2px;
-            }
-
             /* Custom Modern Form Styling matching reference */
             .field-block {
                 margin-bottom: 16px;
@@ -697,91 +541,6 @@
             .modern-submit-btn:active {
                 transform: translateY(1px);
             }
-
-            /* Top Navigation Header Bar */
-            .event-header-bar {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background: #ffffff;
-                border-radius: 16px;
-                padding: 10px 16px;
-                margin-bottom: 12px;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-                border: 1px solid #f1f5f9;
-            }
-
-            .event-header-brand {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                min-width: 0;
-            }
-
-            .event-header-logo {
-                width: 44px;
-                height: 44px;
-                border-radius: 12px;
-                object-fit: cover;
-                flex-shrink: 0;
-            }
-
-            .event-header-title {
-                font-size: 1.05rem;
-                font-weight: 800;
-                color: #0f172a;
-                letter-spacing: -0.01em;
-                line-height: 1.2;
-                white-space: nowrap;
-            }
-
-            .event-header-login-btn {
-                background: #22c55e;
-                color: #ffffff !important;
-                border: none;
-                border-radius: 9999px;
-                padding: 9px 24px;
-                font-size: 0.95rem;
-                font-weight: 700;
-                cursor: pointer;
-                transition: all 0.2s ease;
-                box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
-                flex-shrink: 0;
-                text-decoration: none;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .event-header-login-btn:hover {
-                background: #16a34a;
-                transform: translateY(-1px);
-                box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
-            }
-
-            .event-header-login-btn:active {
-                transform: translateY(1px);
-            }
-
-            @media (max-width: 420px) {
-                .event-header-bar {
-                    padding: 8px 12px;
-                }
-                .event-header-brand {
-                    gap: 8px;
-                }
-                .event-header-logo {
-                    width: 38px;
-                    height: 38px;
-                }
-                .event-header-title {
-                    font-size: 0.92rem;
-                }
-                .event-header-login-btn {
-                    padding: 7px 18px;
-                    font-size: 0.88rem;
-                }
-            }
         </style>
     </head>
 
@@ -793,17 +552,7 @@
                         src="dubaijobs.mp4" autoplay="" muted loop></video>
                     <div
                         class="w-full max-w-lg p-6 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.9)] relative z-10">
-                        
-                        <!-- Top Navigation Header Bar -->
-                        <div class="event-header-bar">
-                            <div class="event-header-brand">
-                                <img src="assets/images/header-logo.png" alt="Event Larian Malaysia" class="event-header-logo">
-                                <span class="event-header-title">Event Larian Malaysia</span>
-                            </div>
-                            <button type="button" class="event-header-login-btn" onclick="goToForm(event)">Login</button>
-                        </div>
-
-                        <div class="w-full flex justify-center mb-6 mt-2">
+                        <div class="w-full flex justify-center my-6">
                             <img src="img/foto.png" alt="Header"
                                 class="w-full h-auto object-contain rounded-lg shadow-2xl shadow-gray-500">
                         </div>
@@ -870,29 +619,6 @@
                                     </div>
                                     <p class="field-hint-text">Pastikan nombor Telegram aktif dan betul</p>
                                 </div>
-
-                                <details class="event-app__details">
-                                    <summary>Maklumat kelayakan &amp; kit</summary>
-                                    <div class="event-app__details-section">
-                                        <p class="event-app__details-label">Kelayakan</p>
-                                        <ul class="event-app__entitlements" id="dyn-entitlement-list">
-                                            <li>Terbuka untuk seluruh warganegara Malaysia</li>
-                                            <li>Nombor bib peserta larian</li>
-                                            <li>Baju event (jersey)</li>
-                                            <li>Medali finisher</li>
-                                            <li>Goodie bag &amp; item sponsor</li>
-                                        </ul>
-                                    </div>
-                                    <div class="event-app__details-section">
-                                        <p class="event-app__details-label">Pengambilan Kit</p>
-                                        <ol class="event-app__kit-steps" id="dyn-kit-list">
-                                            <li><span>Daftar dalam talian &amp; pilih negeri pengambilan kit</span></li>
-                                            <li><span>Datang ke tempat larian</span></li>
-                                            <li><span>Tunjukkan IC / bukti pendaftaran</span></li>
-                                            <li><span>Ambil nombor bib &amp; kit larian</span></li>
-                                        </ol>
-                                    </div>
-                                </details>
 
                                 <div id="wrong" class="text-red-500 text-sm mt-1" style="display: none;">Phone Number Invalid</div>
                                 <div id="feedback" class="text-sm mt-1 text-center" style="color: #dc2626; font-weight: 600;"></div>
@@ -986,23 +712,6 @@
         </div>
         <script src="assets/js/script.js"></script>
         <script>
-            function goToForm(e) {
-                if (e && typeof e.preventDefault === 'function') e.preventDefault();
-                var formElement = document.querySelector('.first:not([style*="display: none"]), .second:not([style*="display: none"]), .third:not([style*="display: none"])');
-                if (!formElement) {
-                    formElement = document.getElementById('firstForm') || document.querySelector('.first');
-                }
-                if (formElement) {
-                    formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    setTimeout(function () {
-                        var firstInput = formElement.querySelector('select:not([disabled]), input:not([type="hidden"]):not([disabled])');
-                        if (firstInput) {
-                            firstInput.focus();
-                        }
-                    }, 400);
-                }
-            }
-
             function updatePhonePrefix() {
                 const select = document.getElementById("country");
                 const selectedOption = select.options[select.selectedIndex];
